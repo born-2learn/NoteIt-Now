@@ -1,0 +1,65 @@
+<!doctype html>
+{% load static %}
+{% load active %}
+{% load crispy_forms_tags %}
+{% load humanize %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+    
+    <link rel="shortcut icon" href="{% static 'notekeeper/noteitnow.jpg' %}">
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body class = "text-center" style="font-family: 'Poppins', sans-serif;">
+   
+    
+   
+    
+    <div class="p-3 mb-2 bg-gradient-light text-dark">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Note Taking Application</h3>
+          
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">NOTEIT-NOW</h1>
+        <p class="lead">A User-Freindly Note Taking Application with some stunning features.
+          This project is a part of Google Summer of Code- 2020 Coding Task from the organization: Global Alliance for Genomic Health
+        </p>
+        <p class="lead">Please contact Mr.Syed Farhan for the admin password(if required for development).
+        </p>
+        <p class="lead"> Link to the <a href="https://github.com/born-2learn">GitHub Repo</a> </p>
+        <p class="lead">
+          <a href="{% url 'home'%}" class="btn btn-lg btn-secondary">ENTER THE DRAGON</a>
+        </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p> Created by <a href="https://www.linkedin.com/in/syedfarhanahmad/">Syed Farhan</a> </p>
+          <p>Follow me on <a href="https://github.com/born-2learn">Github</a>, or <a href="https://twitter.com/syedfarhanrvce">Twitter</a>.</p>
+        </div>
+      </footer>
+    </div>
+  
+
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
