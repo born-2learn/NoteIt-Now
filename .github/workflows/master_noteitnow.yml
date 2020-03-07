@@ -18,7 +18,7 @@ jobs:
     - name: Set up Python version
       uses: actions/setup-python@v1
       with:
-        python-version: '3.6'
+        python-version: '3.7'
 
     - name: Install Python dependencies
       run: |
@@ -27,15 +27,10 @@ jobs:
         pip install -r requirements.txt
         python3 manage.py migrate --run-syncdb
       
-      
-        
-    - name: Zip the application files
-      run: zip -r myapp.zip .
+    
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v1
       with:
         app-name: 'noteitnow'
-        slot-name: 'production'
-        publish-accounts: ${{ secrets.AzureAppService_Publishaccounts_f9851484ce494476820b45c818495ea7 }}
-        package: './myapp.zip'
+        publish-accounts: ${{ secrets.azureWebAppPublishProfile }}
