@@ -13,7 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: 'Checkout Master Branch'
     - uses: actions/checkout@master
+
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Set up Python version
       uses: actions/setup-python@v1
@@ -33,4 +38,7 @@ jobs:
       uses: azure/webapps-deploy@v1
       with:
         app-name: 'noteitnow'
-        publish-accounts: ${{ secrets.azureWebAppPublishProfile }}
+         
+    - name: logout
+      run: |
+        az logout
