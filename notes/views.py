@@ -9,7 +9,7 @@ from django.http import JsonResponse, HttpResponse
 from io import BytesIO
 from django.conf import settings
 from django.template.loader import get_template
-from django.core.signing import BadSignature
+#from django.core.signing import BadSignature
 from taggit.models import Tag
 
 def welcomepage(request):
@@ -130,14 +130,17 @@ def search_note(request):
 
 def get_shareable_link(request, signed_pk):
     try:
-        pk = Note.signer.unsign(signed_pk)
+        #pk = Note.signer.unsign(signed_pk)
+        pk = signed_pk
         note = Note.objects.get(pk=pk)
         context = {
             'note_detail': note
         }
         return render(request, 'shared_note.html', context)
-    except (BadSignature, Note.DoesNotExist):
-        raise Http404('No Order matches the given query.')
+    #except (BadSignature, Note.DoesNotExist):
+    #raise Http404('No Order matches the given query.')
+    except:
+        pass
 
 
 def get_all_notes_tags(request, slug):

@@ -4,7 +4,7 @@ from django.shortcuts import redirect
 from django.utils.text import slugify
 from django.contrib.auth.models import User
 from taggit.managers import TaggableManager
-from django.core.signing import Signer
+#from django.core.signing import Signer
 from django.utils.html import mark_safe
 import markdown
 import uuid
@@ -40,7 +40,7 @@ class Note(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     slug = models.SlugField(max_length=200, unique=True)
     tags = TaggableManager()
-    signer = Signer(salt='notes.Note')
+    #signer = Signer(salt='notes.Note')
 
     def return_markdown_message(self):
         return mark_safe(
@@ -50,13 +50,9 @@ class Note(models.Model):
                 output_format="html5"
             )
         )
-
-    def get_signed_hash(self):
-        signed_pk = self.signer.sign(self.pk)
-        return signed_pk
-
+    
     def get_absolute_url(self):
-        return reverse('share_notes', args=(self.get_signed_hash(),))
+        return reverse('share_notes', args=(self.pk,))
 
     def __str__(self):
         return self.note_title

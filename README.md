@@ -79,7 +79,7 @@ Refer **CONTRIBUTING.md** for further details.
 
 [(Back to top)](#table-of-content)
 
-### HomePage with basic information, and developer's profile links.
+### HomePage with basic information, and developer's accounts links.
 
 ![HomePage](pictures/home_page.png)   
 

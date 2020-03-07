@@ -35,5 +35,5 @@ jobs:
       with:
         app-name: 'noteitnow'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f9851484ce494476820b45c818495ea7 }}
+        publish-accounts: ${{ secrets.AzureAppService_Publishaccounts_f9851484ce494476820b45c818495ea7 }}
         package: './myapp.zip'

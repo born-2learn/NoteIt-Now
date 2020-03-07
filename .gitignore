@@ -7,6 +7,10 @@ __pycache__/
 
 .vscode
 
+#environment var
+djangoenv1
+djangoenv2
+
 # C extensions
 *.so
 *.vscode
