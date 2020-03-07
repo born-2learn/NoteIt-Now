@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 'Checkout Master Branch'
+    
     - uses: actions/checkout@master
 
     - uses: azure/login@v1
