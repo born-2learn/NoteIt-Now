@@ -2,13 +2,14 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A User-Freindly Note Taking Application with some stunning features. This project is a part of Google Summer of Code- 2020 Coding Task from the organization: Global Alliance for Genomic Health.
+A User-Freindly Note Taking Application with some stunning features. This project is a part of [Google Summer of Code](https://summerofcode.withgoogle.com/) - 2020 Coding Task from the organization: [Global Alliance for Genomic Health](https://www.ga4gh.org/).
 
 ## Table of content ##
 
 - [Features](#features)
 - [Installation & Setup](#installation)
-- [Contribution](#contribution)
+- [Reporting Bugs](#reporting-bugs)
+- [Contribution](#contributing)
 - [Demonstration Snaps](#demonstration-snaps)
 - [Get in touch](#-get-in-touch)
 
@@ -48,20 +49,21 @@ It is recommended to follow further steps while in a virtual environment. To cre
 - Next, Install Dependencies
 
 ```bash
-cd noteitnow
+cd NoteIt-Now
 pip3 install -r requirements.txt
-```
-
-- Next, create a file names `.env` under noteitnow app directory(where `settings.py` file is present). Add a secret key to your `.env` file:
-
-```
-SECRET_KEY=<your_secret_key>
 ```
 
 - Run django migrations
 
 ```bash
+python3 manage.py makemigrations
 python3 manage.py migrate
+```
+
+- Run django migrations( for apps without migrations)
+
+```bash
+python3 manage.py migrate --run-syncdb
 ```
 
 - Run django server
@@ -70,10 +72,18 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 
-## Contribution ##
+
+## Reporting Bugs ##
 [(Back to top)](#table-of-content)
 
-Refer **CONTRIBUTING.md** for further details.
+Please, use [ISSUE_TEMPLATE/bug_report.md](.github/ISSUE_TEMPLATE/bug_report.md) to create an issue and describe your bug.
+
+
+## Contributing ##
+[(Back to top)](#table-of-content)
+
+Below is a list of suggested contributions you can make. Before you work on any, it is advised that you create an issue using the [ISSUE_TEMPLATE/contribution.md](.github/ISSUE_TEMPLATE/contribution.md) to tell us what you plan to work on. This ensures that your work can be merged to the `master` branch in a timely manner.
+
 
 # Demonstration Snaps #
 
@@ -91,6 +101,7 @@ Refer **CONTRIBUTING.md** for further details.
 
 ### Notes - The HEART of the application
 ![Notes](pictures/notes.png)
+
 
 
 ## Get in Touch ##
