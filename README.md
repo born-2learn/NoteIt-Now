@@ -2,9 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A User-Freindly Note Taking Application with some stunning features. This project is a part of [Google Summer of Code](https://summerofcode.withgoogle.com/) - 2020 Coding Task from the organization: [Global Alliance for Genomic Health](https://www.ga4gh.org/).
+A User-Freindly Note Taking Application with some stunning features. This project is a part of [Google Summer of Code](https://summerofcode.withgoogle.com/) - 2020 Coding Task from the organization: [Global Alliance for Genomics & Health](https://www.ga4gh.org/).
 
-## Table of content ##
+## Table of contents ##
 
 - [Features](#features)
 - [Installation & Setup](#installation)
@@ -82,7 +82,7 @@ Please, use [ISSUE_TEMPLATE/bug_report.md](.github/ISSUE_TEMPLATE/bug_report.md)
 ## Contributing ##
 [(Back to top)](#table-of-content)
 
-Below is a list of suggested contributions you can make. Before you work on any, it is advised that you create an issue using the [ISSUE_TEMPLATE/contribution.md](.github/ISSUE_TEMPLATE/contribution.md) to tell us what you plan to work on. This ensures that your work can be merged to the `master` branch in a timely manner.
+Before you work on any contributions, it is advised that you create an issue using the [ISSUE_TEMPLATE/contribution.md](.github/ISSUE_TEMPLATE/contribution.md) to tell us what you plan to work on. This ensures that your work can be merged to the `master` branch in a timely manner.
 
 
 # Demonstration Snaps #
