@@ -41,7 +41,7 @@ A User-Freindly Note Taking Application with some stunning features. This projec
 - Clone the repository
 
 ```bash
-git clone https://github.com/born-2learn/noteitnow.git
+git clone https://github.com/born-2learn/NoteIt-Now.git
 ```
 
 It is recommended to follow further steps while in a virtual environment. To create a virtual environment, follow [this link](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
