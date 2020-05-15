@@ -89,9 +89,6 @@ Before you work on any contributions, it is advised that you create an issue usi
 
 [(Back to top)](#table-of-content)
 
-### HomePage with basic information, and developer's accounts links.
-
-![HomePage](pictures/home_page.png)   
 
 ### Login Page with NavBar
 ![LoginPage](pictures/login.png)
