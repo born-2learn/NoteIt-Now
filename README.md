@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A User-Freindly Note Taking Application with some stunning features. This project is a part of [Google Summer of Code](https://summerofcode.withgoogle.com/) - 2020 Coding Task from the organization: [Global Alliance for Genomics & Health](https://www.ga4gh.org/).
+Noteit-Now is a User-Freindly Note Taking Application with some stunning features.
 
 ## Table of contents ##
 
