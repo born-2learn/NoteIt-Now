@@ -15,7 +15,7 @@ markdown-checklist==0.4.1
 mccabe==0.6.1
 Pillow==6.2.1
 pycparser==2.20
-Pygments==2.5.2
+Pygments==2.7.4
 pylint==2.4.4
 python-decouple==3.3
 pytz==2019.3
