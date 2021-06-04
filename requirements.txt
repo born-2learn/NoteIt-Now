@@ -2,7 +2,7 @@ asgiref==3.2.3
 astroid==2.3.3
 cffi==1.14.0
 cryptography==2.8
-Django==3.0.4
+Django==3.1.9
 django-appconf==1.0.3
 django-crispy-forms==1.8.0
 django-cryptography==1.0
